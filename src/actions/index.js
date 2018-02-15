@@ -17,9 +17,8 @@ export const activeCardSelect = ({ id }) => ({
   id,
 });
 
-export const activeCardFlip = ({ id }) => ({
+export const activeCardFlip = () => ({
   type: ACTIVE_CARD_FLIP,
-  id,
 });
 
 export const cardAdd = ({ word, definition }) => ({
