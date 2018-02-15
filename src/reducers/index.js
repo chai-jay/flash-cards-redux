@@ -69,17 +69,17 @@ const cards = (state = initialState.cards, action) => {
       return [
         ...state,
         {
-          id: state.cards.length,
+          id: state.length,
           word: action.word,
           definition: action.definition,
         },
       ];
 
     case CARD_DELETE:
-      return state.cards.filter(c => c.id !== action.id);
+      return state.filter(c => c.id !== action.id);
 
     case CARD_EDIT:
-      return state.cards.map(c => (c.id === action.id ? {
+      return state.map(c => (c.id === action.id ? {
         id: action.id,
         word: action.word,
         definition: action.definition,
