@@ -69,7 +69,7 @@ const cards = (state = initialState.cards, action) => {
       return [
         ...state,
         {
-          id: state.length,
+          id: state.length + 1,
           word: action.word,
           definition: action.definition,
         },
