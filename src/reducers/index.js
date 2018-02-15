@@ -23,7 +23,12 @@ const initialState = {
     {
       id: 1,
       word: 'mouse',
-      definition: 'A small mammal.',
+      definition: 'A small mammal that squeeks.',
+    },
+    {
+      id: 2,
+      word: 'dog',
+      definition: 'An adorable medium mammal that barks.',
     },
   ],
   activeCard: {
