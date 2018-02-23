@@ -18,7 +18,7 @@ import {
 }
 */
 
-const initialState = {
+export const initialState = {
   cards: [
     {
       id: 1,
